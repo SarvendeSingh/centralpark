@@ -1,0 +1,198 @@
+body{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    background-color: #f8f4f0;
+}
+header{
+    border-bottom: 1px solid black;
+}
+.main-header{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    width: 90%;
+    margin: 0 auto;
+}
+.main-header .logo{
+    display: flex;
+    width: 261px;
+    position: relative;
+    align-items: center;
+}
+
+.main-header .logo img{
+    width: 227px;
+    height: 62px;
+  
+}
+.main-header .logo::after{
+    content: "";
+    width: 1px;
+    height: 58%;
+    background-color: #000;
+    position: absolute;
+    /* left: 0; */
+    right: 20px;
+    margin: auto;
+}
+.main-header .logo .t-years{
+    width: auto;
+    height: 62px;
+    margin-left: 30px;
+}
+.main-header .menu-btn{
+    display: flex;
+    flex-direction: column;
+}
+.main-header .menu-btn div ul {
+    display: flex;
+    justify-content: end;
+    margin: 1em 0 0.6em 0;
+}
+.main-header .menu-btn div:nth-child(2) ul{
+    margin: 0.6em 0 1em 0;
+}
+.main-header .menu-btn div ul li{
+    list-style-type: none;
+    margin-left: 55px;
+    position: relative;
+}
+.main-header .menu-btn div.upper-menu ul li{
+    height: 12px;
+    display: flex;
+    align-items: center;
+    transition: .5s;
+
+}
+.main-header .menu-btn div.upper-menu ul li::after{
+    content:"";
+    width: 1px;
+    height: 70%;
+    background: #000;
+    position: absolute;
+    right: -25px;
+}
+.main-header .menu-btn div.upper-menu ul li:last-child::after{
+    content: none;
+}
+.main-header .menu-btn div.upper-menu ul li a::after{
+    content:'';position:absolute;background:#9e8061;bottom:-2px;right:0;height:1px;-webkit-transition:all ease-in-out .3s;-o-transition:all ease-in-out .3s;transition:all ease-in-out .3s;width:0;
+}
+.main-header .menu-btn div.upper-menu ul li:last-child a::after{
+    content: none;
+}
+.main-header .menu-btn div.upper-menu ul li:hover a:after{width:100%;left:0;}
+.main-header .menu-btn div.bottom-menu ul li{    
+    margin-left: 86px;
+}
+.main-header .menu-btn div.bottom-menu ul li a::after{
+    content:'';position:absolute;background:#9e8061;bottom: -25px;
+    right: 0;
+    height: 2px;-webkit-transition:all ease-in-out .3s;-o-transition:all ease-in-out .3s;transition:all ease-in-out .3s;width:0;
+}
+.main-header .menu-btn div.bottom-menu ul li:last-child a::after{
+    content: none;
+}
+.main-header .menu-btn div.bottom-menu ul li:hover a:after{width:100%;left:0;}
+.main-header .menu-btn div ul li a{
+    text-decoration: none;
+    color: black;
+    font-size: 10px;
+    letter-spacing: 1px;
+    position: relative;
+}
+.main-header .menu-btn div:nth-child(2) ul li a{
+    font-size: 12px;
+}
+.main-header .menu-btn div ul li a .fa-magnifying-glass{
+    font-size: 17px;
+}
+.main-header .menu-btn div.bottom-menu ul li .slidemenu span{
+    width: 40px;
+    height: 1px;
+    display: block;
+    background: rgb(0, 0, 0);
+    margin: 8px 0;
+}
+.sec-heading{
+    margin: 120px auto;
+    text-align: center;
+}
+.sec-heading span{
+    display: block;
+    padding-bottom: 10px;
+    letter-spacing: 11px;
+    color: #000;
+    text-transform: uppercase;
+    font-size: 0.9rem;
+}
+.sec-heading h1{
+    margin: 0;
+    font-size: 56px;
+    font-weight: 100;
+}
+.centralpark-main{
+    width: 90%;
+    margin: auto;
+}
+.resorts-main{
+    position: relative;
+    overflow: hidden;
+}
+.resorts-main .resort1{
+    width: 36%;
+    float: left;
+}
+.resorts-main .resort2{
+    width: 56%;
+    float: right;
+}
+.resorts-main .resort img{
+    width: 100%;
+}
+.resorts-main .resort3{
+    width: 56%;
+    clear: both;
+    float: left;
+    position: relative;
+    top: 110px;
+}
+.resorts-main .resort4{
+    width: 36%;
+    float: right;
+    position: relative;
+    top: -50px;
+}
+.resorts-main .resort5{
+    position: absolute;
+    left: 42.6%;
+    top: 512px;
+    z-index: 1;
+    width: 172px;
+}
+.section2{
+    clear: both;
+    background: #cebea4;
+    padding-top: 180px;
+    margin-top: -180px;
+    padding-bottom: 80px;
+}
+.welcomecentral{
+    width: 90%;
+    margin:auto
+}
+.welcomecentral .sec-heading{
+    text-align: left    ;
+    margin: 120px auto 60px;
+    color: #fff;
+}
+.welcomecentral .sec-heading span{
+    color: #fff;
+}
+.welcomecentral p{
+    letter-spacing: 1px;
+    color: #fff;
+    line-height: 25px;
+    font-size: 18px;
+}
